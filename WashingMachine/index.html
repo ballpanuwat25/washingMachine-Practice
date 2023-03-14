@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Washing Machine</title>
+</head>
+<body>
+    <div class="container">
+
+        <div class="content1">
+            <div class="WM-body">
+                <div class="WM-header">
+                    <a class="WM-button" onclick="imgSpin()"></a>
+                    <div class="WM-monitor">
+                        <p class="WM-monitor-text" id="timer"></p>
+                    </div>
+                </div>
+
+                <a class="WM-lid-open" id="OC-lid">
+                    <div class="WM-lid-handle"> </div>
+                </a>       
+
+                <div id="WM-circle-hole" ondrop="drop(event)" ondragover="allowDrop(event)" class="WM-stop"> </div>
+
+                <div class="WM-legs">
+                    <div class="WM-leg"></div>
+                    <div class="WM-leg"></div>
+                </div>
+
+            </div>
+        </div>
+        
+        <div class="content2">
+            <div id="picture" ondrop="drop(event)" ondragover="allowDrop(event)">
+            </div> <br>
+
+            <input type="file" id="fileInput"> <br> <br>
+            <button onclick="upload()" class="upload-btn">Upload Image</button>
+        </div>
+        
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
